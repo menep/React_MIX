@@ -1,5 +1,4 @@
 import React from "react";
-import HeadingTwo from "./HeadingTwo/HeadingTwo";
 
 const navbar = props => {
   const style = {
@@ -13,12 +12,16 @@ const navbar = props => {
       position: "fixed",
       top: 0,
       left: 0,
+    },
+    heading: {
+      fontSize: '3.5rem',
+      fontWeight: '200'
     }
   };
 
   return (
     <nav style={style.container}>
-      <HeadingTwo />
+      <h2 style={style.heading}>React Notes</h2>
     </nav>
   );
 };

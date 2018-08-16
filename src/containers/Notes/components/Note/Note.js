@@ -1,25 +1,19 @@
 import React from "react";
-import InputContainer from "./InputContainer/InputContainer";
+import css from "./Note.css";
 
-const note = props => {
-  const style = {
-    container: {
-      width: "70%",
-      height: "100%",
-      display: 'flex',
-      flexDirection: 'column',
-    }
-  };
-
-  return (
-    <div style={style.container}>
-      <InputContainer
-        change={props.change}
-        clicked={props.clicked}
-        value={props.value}
-      />
+const note = props => (
+  <div className={css.container}>
+    <textarea
+      className={css.textArea}
+      value={props.value}
+      onChange={props.change}
+    />
+    <div className={css.btnContainer}>
+      <button className={css.button} onClick={props.clicked}>
+        Save
+      </button>
     </div>
-  );
-};
+  </div>
+);
 
 export default note;

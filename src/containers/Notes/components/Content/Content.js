@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Note from "../../components/Note/Note";
-import Sidebar from "../../components/Sidebar/Sidebar";
+import Note from "../Note/Note";
+import Sidebar from "../Sidebar/Sidebar";
 
 class Content extends Component {
   constructor(props) {

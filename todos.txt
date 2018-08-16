@@ -1,5 +1,8 @@
 Todos:
 
+# General:
+- implement navigation buttons
+
 # Notes:
 - refactor folder structure
 - implement localStorage to save Notes
