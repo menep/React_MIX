@@ -1,0 +1,7 @@
+Todos:
+
+# Notes:
+- refactor folder structure
+- implement localStorage to save Notes
+- implement reset button
+- vertical header?
