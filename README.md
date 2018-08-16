@@ -1,4 +1,4 @@
-# React Mix
+# React MIX
 A collection of different apps made with React:
 
 - Random Quote Machine (https://github.com/menep/React_RQM)
