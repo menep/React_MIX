@@ -12,8 +12,11 @@ const links = props => (
       <Link to="/notes" className={css.link__notes}>
         Notes
       </Link>
+      <Link to="/pomodoro" className={css.link__pomodoro}>
+        Pomodoro
+      </Link>
     </div>
-    <Footer footerNote='A project by MP' />
+    <Footer footerNote="A project by Menep" />
   </div>
 );
 

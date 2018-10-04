@@ -1,22 +1,19 @@
 import React, { Component } from "react";
-import css from "./Notes.css";
+import css from "./Pomodoro.css";
 import Header from "./components/Header/Header";
-import Content from "./components/Content/Content";
+import Main from "./components/Main/Main";
 import Footer from "../../components/Footer/Footer";
 
-class Notes extends Component {
+class App extends Component {
   render() {
     return (
-      <div className={css.Notes}>
-        <div>
-          <Header />
-          <Content />
-        </div>
-
+      <div className={css.container}>
+        <Header />
+        <Main />
         <Footer footerNote="A project by Menep" />
       </div>
     );
   }
 }
 
-export default Notes;
+export default App;

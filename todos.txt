@@ -2,6 +2,7 @@ Todos:
 
 # General:
 - implement navigation buttons
+- 404
 
 # Notes:
 - refactor folder structure
