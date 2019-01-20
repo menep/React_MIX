@@ -14,11 +14,14 @@ class Main extends React.Component {
   }
 
   getDataHandler = () => {
-    fetch("https://talaikis.com/api/quotes/random/")
+    fetch(
+      "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1"
+    )
       .then(res => res.json())
       .then(res => {
-        const quote = res.quote;
-        const author = res.author;
+        console.log(res);
+        const quote = res[0].content.replace(/<\/?p>/g, "");
+        const author = res[0].title;
         this.setState({
           quote,
           author
@@ -32,7 +35,7 @@ class Main extends React.Component {
         <p className={css.author}>{this.state.author}</p>
         <p className={css.quote}>{this.state.quote}</p>
 
-        <button className={css.next} onClick={this.getDataHandler}>
+        <button className={css.next} onClick={this.getDataHandler.bind(this)}>
           Next
         </button>
       </main>

@@ -7,14 +7,14 @@ import Footer from "../../components/Footer/Footer";
 class Rqm extends Component {
   render() {
     const footerNote = (
-      <p>
+      <React.Fragment>
         Quotes by
         <a style={{color: 'inherit'}}
           href="https://talaikis.com/random_quotes_api/"
         >
           Tadas Talaikis
         </a>
-      </p>
+      </React.Fragment>
     );
 
     return (
